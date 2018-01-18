@@ -11,9 +11,13 @@ and open the template in the editor.
     <persistence-unit name="PersonaPU" transaction-type="RESOURCE_LOCAL">
         <class>beans.dominio.Persona</class>
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/recursos_humanos?useSSL=false"/>
+            <!--db
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/recursos_humanos?useSSL=false"/></properties>
+            -->
+            <!--db  oficina-->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3300/recursos_humanos?useSSL=false"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
-            <property name="javax.persistence.jdbc.password" value="admin"/>
+            <property name="javax.persistence.jdbc.password" value="4177507a"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="eclipselink.logging.level.sql" value="FINE"/>
             <property name="eclipselink.logging.parameters" value="true"/>
