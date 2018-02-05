@@ -39,7 +39,7 @@ public class Persona implements Serializable {
     @Column(length = 45)
     private String telefono;
 
-    public Persona(int idPersona, String nombre, String apePaterno, String apeMaterno, String email, String telefono) {
+    public Persona(String nombre, String apePaterno, String apeMaterno, String email, String telefono) {
         this.idPersona = idPersona;
         this.nombre = nombre;
         this.apePaterno = apePaterno;
