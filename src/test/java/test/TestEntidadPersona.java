@@ -26,14 +26,14 @@ import static org.junit.Assert.*;
  */
 public class TestEntidadPersona {
 
-    static EntityManager em;
-    static EntityTransaction tx;
-    static EntityManagerFactory emf;
+    static EntityManager em = null;
+    static EntityTransaction tx = null;
+    static EntityManagerFactory emf = null;
     Logger log = LogManager.getRootLogger();
 
     @BeforeClass
     public static void init() {
-        emf = Persistence.createEntityManagerFactory("PersonaPu");
+        emf = Persistence.createEntityManagerFactory("PersonaPU");
     }
 
     @Before
@@ -47,9 +47,10 @@ public class TestEntidadPersona {
 
     @Test
     public void testPersonaEntity() {
-        log.debug("Iniciando teest Persona Entity JPA");
+        log.debug("Iniciando test Persona Entity JPA");
 
         assertTrue(em != null);
+        
         tx = em.getTransaction();
         tx.begin();
 
